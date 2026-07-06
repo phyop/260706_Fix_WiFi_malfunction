@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+panasonic-okx-wifi-debug-portfolio-brief.md
+generate_medium_diagrams.ps1
