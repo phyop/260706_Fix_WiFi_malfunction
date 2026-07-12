@@ -207,6 +207,7 @@ That validation mattered because a workaround that disappears after reconnect or
 The long-form article version is kept in:
 
 - [`medium-android-wifi-debug-article.md`](medium-android-wifi-debug-article.md)
+- [Read the published Medium article](https://medium.com/@seek1andfind2/when-apps-fail-only-on-one-wi-fi-debugging-android-dns-ipv6-vpn-and-iot-connectivity-4d8fb2862b2f)
 
 ## Supporting Docs
 
