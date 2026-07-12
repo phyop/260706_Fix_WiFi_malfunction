@@ -86,7 +86,7 @@ docs: expand Android Wi-Fi troubleshooting case study
 ```text
 Rewrite the README as a full public case-study template with the complete failure boundary, timeline, final static IPv4 configuration, validation steps, privacy notes, diagrams, and reusable checklist.
 
-Expand the Medium draft into a long-form English article with title options, SEO metadata, tags, and a complete debugging narrative covering DNS, IPv6, VPN/web protection, IoT behavior, the router IP conflict, and the final static IP fix.
+The Medium draft is a long-form English article with title options, SEO metadata, tags, and a complete debugging narrative covering DNS, IPv6, VPN/web protection, IoT behavior, the router IP conflict, and the final static IP fix.
 
 Add a content pack with Resume STAR, LinkedIn copy, commit/PR text, and future extension ideas.
 ```

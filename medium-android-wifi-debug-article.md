@@ -23,6 +23,8 @@ Android, Wi-Fi, DNS, IPv6, VPN, IoT, Networking, Troubleshooting, Static IP, Cas
 
 ---
 
+## Opening
+
 ![Case overview: one Wi-Fi caused several app failures, then a static IPv4 setup restored the path.](medium-assets/01-case-overview.png)
 
 Three unrelated Android apps failed only on one home Wi-Fi network. The same phone worked on cellular data. The same apps worked on other Wi-Fi networks. The Wi-Fi icon looked normal, signal strength looked fine, and the phone was not generally offline. Still, OKX, Binance, and Panasonic IoT could not reliably use that one network path.
@@ -45,7 +47,7 @@ After that change, OKX loaded normally, Binance loaded normally, and Panasonic I
 
 That is the short version. The useful part is the debugging path, because the lesson is not "static IP fixes every Android Wi-Fi problem." The lesson is to map the failure boundary, avoid chasing the first warning too hard, and validate the final configuration in the same conditions that originally failed.
 
-## The First Useful Clue Was the Boundary
+## Background: The First Useful Clue Was the Boundary
 
 The initial symptom sounded vague: some apps said the network was broken. Vague network reports are easy to misread because the user-facing error messages usually compress many possible causes into one warning. A timeout, blocked DNS lookup, broken route, VPN interception, app permission issue, and remote service problem can all look like "network error" on a phone screen.
 
@@ -62,7 +64,7 @@ That boundary ruled out a simple app outage. It also made a full Android device 
 
 The investigation moved toward local network configuration: DNS behavior, IPv6 DNS and routing, VPN and web-protection interception, Android app permissions, IoT local network behavior, and IP assignment.
 
-## The IP Conflict Was the Most Concrete Bug
+## Debug Process: The IP Conflict Was the Most Concrete Bug
 
 ![Router IP conflict: the phone cannot use the same IP address as the gateway.](medium-assets/02-ip-conflict-vs-fixed.png)
 
@@ -131,7 +133,7 @@ The Panasonic app working on cellular data but failing on Wi-Fi suggested that l
 
 Once the phone had a deterministic IPv4 configuration, Panasonic IoT also recovered. That aligned with the theory that the local Wi-Fi path, not just a remote API endpoint, was part of the problem.
 
-## The Final Working Configuration
+## Solution: The Final Working Configuration
 
 The final setup was:
 
@@ -179,7 +181,7 @@ It does not publish Wi-Fi QR codes, full MAC addresses, Wi-Fi passwords, persona
 
 That balance matters. Network debugging is most useful when the evidence is specific, but public writing should not expose secrets or personal device identifiers.
 
-## Takeaways
+## Lessons Learned, Pitfalls, and Conclusion
 
 The lesson was not "static IP fixes everything." The lesson was to follow the boundary and fix the path that the evidence points to.
 
