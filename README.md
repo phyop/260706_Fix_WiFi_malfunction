@@ -67,7 +67,7 @@ flowchart TD
 ## Folder Structure
 
 ```text
-260706_Fix_WiFi_malfunction/
+Fix_WiFi_malfunction/
 ├── README.md
 ├── medium-android-wifi-debug-article.md
 ├── docs/
