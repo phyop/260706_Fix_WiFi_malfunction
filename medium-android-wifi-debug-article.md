@@ -1,30 +1,5 @@
 # When Apps Fail Only on One Wi-Fi: Debugging Android, DNS, IPv6, VPN, and IoT Connectivity
 
-## Title Options
-
-1. When Apps Fail Only on One Wi-Fi: Debugging Android, DNS, IPv6, VPN, and IoT Connectivity
-2. Connected but Broken: How a Static IPv4 Fix Restored Android Apps on One Wi-Fi Network
-3. Debugging an Android Wi-Fi Failure Across OKX, Binance, and Panasonic IoT
-4. The Wi-Fi Was Connected. The Apps Still Failed. Here Is the Network Debugging Path
-5. Android Apps Worked on Cellular but Failed on Home Wi-Fi: A Practical Case Study
-6. From DNS Clues to an IP Conflict: Fixing a One-Network Android Connectivity Bug
-
-## SEO
-
-- **Meta title:** Android Apps Fail on One Wi-Fi: DNS, IPv6, VPN, IoT, and Static IP Fix
-- **Meta description:** A real Android troubleshooting case where OKX, Binance, and Panasonic IoT failed only on one Wi-Fi network. The fix was a static IPv4 setup using 192.168.1.150, gateway 192.168.1.1, DNS 1.1.1.1 and 8.8.8.8, and no proxy.
-- **Slug:** android-apps-fail-one-wifi-static-ip-dns-ipv6-vpn-iot
-- **Primary keywords:** Android Wi-Fi debugging, static IP Android, DNS Android Wi-Fi, IPv6 DNS issue, VPN web protection Android, IoT Wi-Fi troubleshooting
-- **Audience:** Android users, support engineers, network troubleshooters, mobile QA engineers, and technical writers documenting real debugging cases.
-
-## Tags
-
-Android, Wi-Fi, DNS, IPv6, VPN, IoT, Networking, Troubleshooting, Static IP, Case Study
-
----
-
-## Opening
-
 ![Case overview: one Wi-Fi caused several app failures, then a static IPv4 setup restored the path.](medium-assets/01-case-overview.png)
 
 Three unrelated Android apps failed only on one home Wi-Fi network. The same phone worked on cellular data. The same apps worked on other Wi-Fi networks. The Wi-Fi icon looked normal, signal strength looked fine, and the phone was not generally offline. Still, OKX, Binance, and Panasonic IoT could not reliably use that one network path.
